@@ -1,0 +1,33 @@
+<div class="container-fluid dashBoardTopColor">
+    <div class="row" >
+        <div class="col-sm-2">
+            <img src="images/logo.png" style="width:100px; height:63px;">
+         </div>
+         <div class="col-sm-4">
+
+         </div>
+         <div class="col-sm-4">
+
+         </div>
+         <div class="col-sm-1">
+            <h3><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></h3>
+         </div>
+         <div class="col-sm-1">
+            <h3><a href="#"><span class="glyphicon glyphicon-user"></span></a></h3>
+         </div>
+    </div>
+    <div class="row">
+        <div class="sidenav colorwhite col-sm-2 margin-top-60">
+            <ul id="menu" style="list-style-type:none;">
+            <!-- <li>  <img src="images/logo.png" style="width:100px; height:100px;"> </li>-->
+             <li><h5><a href="index.php"><span class="glyphicon glyphicon-home"></span>  Home</a></h5></li>
+             <li><h5><a href="userProfile.php"><span class="glyphicon glyphicon-user"></span>  User Profile</a></h5></li>
+             <li><h5><a href="videoTutorial.php"><span class="glyphicon glyphicon-film"></span>  Video Tutorials</a></h5></li>
+             <li><h5><a href="books.php"><span class="glyphicon glyphicon-book"></span>  Books</a></h5></li>
+             <li><h5><a href="solutions.php"><span class="glyphicon glyphicon-open-file"></span>  Solutions</a></h5></li>
+             <!--<li><h5><a href="discussion.php"><span class="glyphicon glyphicon-home"></span> Discussion</a></h5></li>
+             <li><h5><a href="blog.php"><span class="glyphicon glyphicon-home"></span>Blog</a></h5></li> -->
+            </ul>
+        </div>
+    </div>
+</div>

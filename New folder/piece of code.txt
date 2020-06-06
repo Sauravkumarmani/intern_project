@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GyanTU-Jobs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='icon' href='../images/favicon.png' type='image/x-icon'/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/main.css" media="screen">
+</head>
+<script>
+    function writeUs(){
+        alert("Please share your profile on careers@gyantu.com");
+    }
+</script>
+<body>
+<div class="row"><a href="https://gyantu.com"><img src="../images/logo.png" style="margin-left:20px;width:100px; height:63px;"></a></div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Sarkari Result</h1>
+    <p>Information about Govntment Job </p>
+  </div>
+  <p><h2>All the best</h2></p>
+
+<?php
+$getFileName = $_GET["fileName"];
+$getFileName .= ".php";?>
+<?php
+echo "<table border='1'>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Important Date</th>
+
+<th>Application Fee</th>
+
+<th>Email</th>
+
+<th>More Info</th>
+
+</tr>";
+echo "<tr>";
+
+  echo "<td>" . $_GET["name"]. "</td>";
+
+  echo "<td>" . $_GET["email"]. "</td>";
+
+  echo "<td>" . $_GET["importantDate"]. "</td>";
+
+  echo "<td>" . $_GET["applicationFee"]. "</td>";
+
+  echo "<td>" . $_GET["email"]. "</td>"; echo "";
+
+  echo "<td><a href='$getFileName'>Click to see details</a></td>";
+  echo "</tr>";
+
+echo "</table>";
+?>
+<?php
+$getFileName = $_GET["fileName"];
+$getFileName .= ".php";
+//$getFinalFileName = $getFileName +;
+//echo $getFileName;
+$myfile = fopen($getFileName, "w") or die("Unable to open file!");
+$txt = "Detail of job requirement ";
+echo  $getFileName;
+echo "<a href='$getFileName'>$getFileName</a>";
+fwrite($myfile,  $getFileName);
+fwrite($myfile, $txt);
+$txt = "Detail text and contents \n";
+fwrite($myfile, $txt);
+fclose($myfile);
+?>
+
+</body>
+</html>
+
+
+
+
+
+
+
